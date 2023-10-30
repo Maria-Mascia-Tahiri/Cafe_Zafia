@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Café Zafia</title>
+    <meta name="description" content="Café Zafia">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Webfonts-Einbindung -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
+    
+    <script type='text/javascript'>	//alert("Hallo Welt!");
+
+        //Wenn das Dokument geladen wurde…
+            $(document).ready(function () {
+    
+    
+        //nach oben scrollen:
+        $('a.top').click(function () {
+            $('body,html').animate({scrollTop: 0}, 800);
+                return false;
+            });
+    
+            //Beim Klick auf den "Menü"-Button…
+                $('a#mobile-menu-btn').click(function () {
+                    // …soll die Navigation eingeblendet werden.
+                    $('#navigation').slideToggle("slow");
+            });
+    
+        });
+    
+    </script>    
+</head>
+
+<body id="oben">
+
+<!-- Mail-Button -->
+<a href="mailto:maria.mascia@gmx.de" id="mail-btn"></a>
+
+<div class="wrapper">
+
+    
+<!-- Header -->
+
+<header>
+    
+ 
+<a id="mobile-menu-btn" href="#">Menü</a>
+
+    <nav id="navigation">
+        <ul>
+        <li><a href="cafe-zafia.html">Café Zafia</a></li>
+        <li><a href="kaffee.html">Kaffee</a></li>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="accessoires.html">Accessoires</a></li>
+        <li><a href="index.html"><img src="images/logo_gold.png"  width="242" height="202"></a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="https://www.instagram.com/mariajosemascia"><img src="images/instagram.png"  width="30" height="30" alt="Instagram Icon"></a></li>
+        <li><a href="https://www.facebook.com"><img src="images/facebook.png"  width="30" height="30" alt="Facebook Icon"></a></li>
+    </ul>
+
+</nav>
+
+</header>
+</div>
+
+<!-- Content -->
+
+<section class="main">
+    <div class="column full">
+    <article class="main">
+        <img src="images/hauptbild.jpg" width="1280" height="269" alt="Hauptbild">
+
+</article>
+</section>
+<h1 class="gold">Café Zafia</h1>
+
+<!-- Spaltendefinitionen-->
+
+<section>
+    <div class="row">
+
+        
+        <div class="column third"> 
+            <h2>Unser Kaffee</h2>
+            <img src="images/kaffee-tasse.jpg" width="400" height="300" alt="Kaffe-Tasse">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+</div>
+        
+        <div class="column third">
+            <h2>Kaffeespezialitäten</h2>
+            <img src="images/kaffee-eis.jpg" width="400" height="300" alt="Kaffe-Eis">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+    </div>
+    <div class="column third">
+        <h2>Kaffeezauber</h2>
+        <img src="images/kaffee-zauber.jpg" width="400" height="300" alt="Kaffe-Zauber">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+</div>
+</div>
+</section>
+
+<h1>Taste the best of Coffee</h1>
+<h3>  مقهى  زافية</h3>
+<div id="foto">
+<img src="images/kaffee-glas.jpg" width="1000" height="269" alt="Kaffe-Glas">
+</div>
+
+
+
+
+<!-- Fußleiste -->
+
+
+<footer>
+    <h4>Café Zafia, Musterstraße. 123, 00000 Musterstadt>, Tel.: 1234 123456</h4><br>
+<a href><h5>Datenschutz - Impressum - Kontakt</h5></a> 
+
+    <a class="top" href="#oben">Nach oben</a>
+</footer>
+</div>
+
+
+</body>
+</html>

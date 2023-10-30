@@ -1,0 +1,632 @@
+@charset "utf-8";
+
+/*
+* CSS-Design
+* Responsive Webseite - Reisebuero MaXXia-Startseite
+* Online-Schule für Gestaltung: Webdesign-Kurs
+*/
+
+
+/* Reset * * * * * * * * */
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+    font-size: 100%; /*Browserstandard: 16px */
+}
+
+img{
+    max-width:100%;
+    height: auto;
+}
+
+img#certi{
+    text-align: 
+}
+
+
+
+
+/* Layout * * * * * * * * */
+
+body{
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
+    color: #303030;
+
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+header{
+   margin: 5px 0 0 0;
+   max-width:100%;
+  
+} 
+
+
+/* Navigation * * * * * * * * */
+
+#mobile-menu-btn{
+    display:none;
+}
+
+#navigation{
+float: left;
+margin: 0;
+}
+
+#navigation ul li{
+    display: inline;   
+}
+
+#navigation img{
+   margin: -20px 0 0 0;
+}
+        
+#navigation a{
+    text-decoration: none;
+    margin: 1% 0 0 50px;
+    color:#000; 
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Chewy', 'Arial', sans-serif;
+
+}
+
+
+#navigation a:hover {
+    color:#cdcd05; 
+  
+}
+
+#navigation li a.active{
+    color: #cdcd05;
+}
+
+/* Subnavigation */
+
+.dropbtn {
+    background-color: #cdcd05 ;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 6px solid red;
+    border-radius: 6px;
+    font-size: 30px;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    cursor: pointer;
+    margin: 40px 0 0 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  red;
+    min-width: 200px;
+    z-index: 1;
+    font-size: 30px;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    border: 6px solid black;
+    border-radius: 6px;
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 6px solid black;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: red;}
+
+/* Mail-Button */
+
+#mail-btn{
+	display: block;
+	width: 40px;
+	height: 170px;
+	background: url("../images/mail-button.png") no-repeat;
+	position: fixed;
+	top: 290px;
+	left: 0;
+	z-index: 1;
+	transition: background 0.5s;
+}
+
+#mail-btn:hover{
+	background: url("../images/mail-button.png") no-repeat -40px 0;
+}
+
+label{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    margin-right: 6px;
+    }
+    
+input[type='reset']{
+    border: 0;
+cursor: pointer;
+margin-right: 20px;
+background: #cdcd05;
+padding: 4px 10px;
+color: #fff;
+font-size: 16px;
+border-radius: 4px;
+text-shadow: 1px 1px #842e08;
+margin: 0 10px  50px;
+}
+
+input[type='text']{
+        margin-bottom: 6px;
+        width: 250px;
+        border: 1px solid #999;
+        padding: 5px;
+        font: 400 15px/24px 'Roboto', Arial, sans-serif;
+        margin-top: 4px;
+        margin-right: 1%;
+    }
+    
+textarea{
+    height: 120px;
+    }
+    
+    input:hover, textarea:hover{
+    border: 1px solid #cdcd05
+    }
+    
+    input:focus, textarea:focus{
+        border: 1px solid #cdcd05;
+        background: #eee;
+    }
+    
+    input[type='submit']{
+        border: 0;
+        cursor: pointer;
+        margin-right: 20px;
+        background: #cdcd05;
+        padding: 4px 10px;
+        color: #fff;
+        font-size: 16px;
+        font-size: 1rem;
+        border-radius: 4px;
+        text-shadow: 1px 1px #842e08;
+        margin: 0 10px 0 50px;
+    }
+    
+    input[type='submit']:hover{
+        background: #fff;
+        color: #cdcd05;
+        text-shadow: none;
+    }
+/* Content * * * * * * * * */
+section#main{
+    text-align: center;
+    margin: 5px 0 0 15px;
+   
+}
+
+.main, #main{
+     background-image: url(../images/Kaffeemaschine.jpg) no repeat;
+     text-align: center;
+     margin: 5px 0 0 0;
+     width: 100%;
+}
+
+#demotext {
+color: #FFFFFF;
+background: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+color: #cdcd05 ;
+background: #FFFFFF;
+font-size: 76px;
+font-family: 'Chewy', 'Arial', sans-serif;
+margin-bottom: 100px;
+margin-top: 60px;
+margin-right: 5px;
+}
+
+/* Spalten * * * * * * * * */
+
+.row{
+	width: 100%;
+	float: left;
+}
+
+ .column:first-child {
+margin-left: 0;
+}
+
+.column{
+    margin: 10px 13px 0 1%;
+ 
+    
+}
+
+.half{
+    width: 50%;
+    height: auto;
+    padding: 0 0 0 5%;
+    float: left;
+    margin:-2px 0 5% 1%;
+
+}
+
+
+.third{
+    width: 27%;
+    height: auto;
+    background;
+    float: left;
+    padding: 0 0 0 8%;
+    margin: 0 0 0 4%;
+
+}
+
+.two-thirds{
+    width: 37%;
+    height: auto;
+    padding: 0 0 0 2%;
+    margin: 0 0 0 4%;
+    background:#fff;
+    float: left;
+}
+
+.cake{
+    font-weight: 200;
+    color: red;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    font-size: 28px;
+    position: absolute;
+    margin: 0px -200px;
+}
+
+.foto{
+    text-align: center;
+    margin: 5% 0 0 2%;
+    float: left;
+    padding: 5% 6% 0 2%;
+        
+}
+
+section#cake{
+    margin: 0 0 0 1%;
+}
+
+/* Typografie */
+
+h1{
+    text-align: center;
+    margin: 60px 0 60px 0;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    font-size:48px;
+}
+
+h1.gold{
+    color: #cdcd05;
+    font-size: 60px;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    
+}
+
+h1.red{
+    color:red;
+    font-size: 60px;
+    margin: 150px 0 0 35%;
+    float: left;
+}
+
+h3.gold{
+    color: #cdcd05;
+    font-size: 100px;
+    font-family: 'Chewy', 'Arial', sans-serif;
+    margin: 0 0 -100px 0;
+    padding: 900px 0 0 0;
+}
+
+h2{
+    float: ;
+    padding: 0 60px 0 0;
+    font-family: 'Chewy', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align:center;
+
+}
+
+h4, h5{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+
+
+h3{
+    font-size: 150px;
+    color: #cdcd05;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+p{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 28px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+}
+
+#foto{
+    text-align: center;
+}
+
+.top{
+    font-size: 12px;
+    float: right;
+    text-decoration: underline;
+}
+
+footer{
+	width: 100%;
+	float: left;
+	background: #303030;	
+	margin-top: 300px;
+	color: #fff;
+    padding: 25px;
+    height: 200px;
+}
+
+/* Media Queries * * * * * * * * */
+
+
+@media only screen and (min-width: 980px) and (max-width: 1279px) {
+
+    header{
+        background: #40cfe0;	/* Blau */
+    }
+    }   
+    
+    @media only screen and (min-width: 760px) and (max-width: 979px) {
+    
+    header{
+        background:#cdcd05;	 /* Orange */
+    } 
+
+
+    .wrapper{
+        width: 100%;
+    }
+
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:10px 0;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Chewy', 'Arial', sans-serif;
+        font-size: 20px;
+        
+    } 
+
+    a#mobile-menu-btn:hover{
+        color: #cdcd05;
+    }
+    
+    #navigation{
+        display: none;
+        width: 100%;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 2px;
+        padding: 25px;
+        font-size:20px;
+        font-size: ;
+        width: 100%;
+        font-family: 'Chewy', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+        
+        text-decoration: none;
+        font-size: 20px;
+        font-size: rem;
+        font-family: 'Roboto Slab', 'Noto Serif', serif;
+        color: #726262;
+        text-align: center;
+    }
+
+    #navigation a:hover {
+        color:#cdcd05; 
+      
+    }
+    }
+     
+    
+    @media only screen and (max-width: 759px) {
+    
+    header{
+
+        background:#cdcd05;
+         /* Viollet */
+        1position: fixed
+    }
+    .third{
+        width: 90%;
+        height: auto;
+        background;
+        float: left;
+    }
+
+    #main{
+        padding: 0 15px 0 
+    }
+
+        
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:4px 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-family: 'Chewy', 'Arial', sans-serif;
+        font-size: 20px;
+    } 
+
+    a#mobile-menu-btn:hover{
+        color: #cdcd05;
+    }
+    
+    #navigation{
+        display: none;
+        width: 100%;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 2px;
+        padding: 25px;
+        font-size:20px;
+        font-size:rem;
+        width: 100%;
+        text-align: center;
+        font-family: 'Chewy', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+    
+        float: left;
+    }
+
+    #navigation a:hover {
+        color:#cdcd05; 
+}
+
+h2{
+    font-size: 19px;
+}
+
+h1{
+    font-size: 44px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+    a#mobile-menu-btn{
+        display: block;
+        background:#333;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:4px 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-family: 'Chewy', 'Arial', sans-serif;
+        font-size: 20px;
+    }
+    
+    a#mobile-menu-btn:hover{
+        color: #cdcd05;
+    }
+    
+    #navigation{
+        display: none;
+        width: 100%;
+    }
+
+    #navigation ul li{
+        display: block;
+        float: none;
+    }
+
+    #navigation ul li a{
+        display: block;
+        background: #333;
+        color: #fff;
+        margin: 2px;
+        padding: 25px;
+        font-size:20px;
+        font-size:rem;
+        width: 100%;
+        text-align: center;
+        font-family: 'Chewy', 'Arial', sans-serif;
+    }
+
+    #navigation a{
+    
+        float: left;
+    }
+
+    #navigation a:hover {
+        color:#cdcd05; 
+      
+    }
+    h2{
+        font-size: 19px;
+    
+    }
+    .third{
+        width: 90%;
+        height: auto;
+        background;
+        float: left;
+
+    }
+
+
+}

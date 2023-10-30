@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Café Zafia</title>
+    <meta name="description" content="Café Zafia">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Webfonts-Einbindung -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
+    
+    <script type='text/javascript'>	//alert("Hallo Welt!");
+
+        //Wenn das Dokument geladen wurde…
+            $(document).ready(function () {
+    
+    
+        //nach oben scrollen:
+        $('a.top').click(function () {
+            $('body,html').animate({scrollTop: 0}, 800);
+                return false;
+            });
+    
+            //Beim Klick auf den "Menü"-Button…
+                $('a#mobile-menu-btn').click(function () {
+                    // …soll die Navigation eingeblendet werden.
+                    $('#navigation').slideToggle("slow");
+            });
+    
+        });
+    
+    </script>    
+</head>
+
+<body id="oben">
+
+<!-- Mail-Button -->
+<a href="mailto:maria.mascia@gmx.de" id="mail-btn"></a>
+
+<div class="wrapper">
+
+    
+<!-- Header -->
+
+<header>
+    
+ 
+<a id="mobile-menu-btn" href="#">Menü</a>
+
+
+ <nav id="navigation">
+        <ul>
+        <li><a href="cafe-zafia.html">Café Zafia</a></li>
+        <li><a href="kaffee.html">Kaffee</a></li>
+        <li><a href="cake.html"class="active">Cake</a></li>
+        <li><a href="accessoires.html">Accessoires</a></li>
+       <li><a href="index.html"><img src="images/logo_gold.png"  width="242" height="202"></a></li>
+       <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="https://www.instagram.com/mariajosemascia"><img src="images/instagram.png"  width="30" height="30" alt="Instagram Icon"></a></li>
+        <li><a href="facebook.html"><img src="images/facebook.png"  width="30" height="30" alt="Facebook Icon"></a></li>
+    </ul>
+
+
+
+</nav>
+</header>
+</div>
+
+<!-- Content -->
+
+<section id="cake">
+    <div class="column full">
+        <article id="main">
+            <img src="images/pastel.jpg" width="1200" height="400">
+            <div class="foto one">
+                <img src="images/erdbeercake.jpg" width="300" height="200">
+               <a href="erdbeercake.html" ><span class="erdbeer cake">Erdbeercake</span></a>
+            </div>
+    <div class="foto two">
+        <img src="images/toertchen.jpg" width="300" height="200">
+        <span class="toertchen cake">Törtchen</span>
+    </div>
+
+    <div class="foto three">
+        <img src="images/brownie.jpg" width="300" height="200">
+        <span class="brownie cake">Brownie</span>
+    </div>
+    <div class="foto four">
+        <img src="images/kirsche.jpg" width="300" height="200">
+        <span class="kirsche cake">Kirsche</span>
+    </div>
+    <div class="foto five">
+        <img src="images/torte.jpg" width="300" height="200">
+        <span class="Torte cake">Torte</span>
+    </div>
+    <div class="foto six">
+        <img src="images/rolle.jpg" width="300" height="200">
+        <span class="brownie cake">Rolle</span>
+    </div>
+        
+
+
+        </article>
+</div>
+        </section>
+<h1 class="red">Select your Cake</h1>
+
+    
+    
+
+
+
+<!-- Fußleiste -->
+
+<footer>
+    <h4>Café Zafia, Musterstraße. 123, 00000 Musterstadt>, Tel.:  123456</h4><br>
+<a href><h5>Datenschutz - Impressum - Kontakt</h5></a> 
+
+    <a class="top" href="#oben">Nach oben</a>
+</footer>
+
+
+</div>
+</body>
+</html>
